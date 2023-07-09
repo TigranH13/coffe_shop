@@ -1,9 +1,11 @@
-import 'package:coffe_shop/configs/app_colors.dart';
-import 'package:coffe_shop/presentation/cubit/coffee_cubit.dart';
-import 'package:coffe_shop/presentation/screens/detail_screen.dart';
-import 'package:coffe_shop/presentation/widgets/coffe_tile.dart';
+import 'package:coffe_shop/core/configs/app_colors.dart';
+
+import 'package:coffe_shop/presentation/coffee/screens/detail_screen.dart';
+import 'package:coffe_shop/presentation/coffee/widgets/coffe_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../application/cubit/coffee_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

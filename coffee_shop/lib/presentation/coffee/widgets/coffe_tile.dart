@@ -1,4 +1,4 @@
-import 'package:coffe_shop/configs/app_colors.dart';
+import 'package:coffe_shop/core/configs/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeTile extends StatelessWidget {
@@ -20,9 +20,9 @@ class CoffeeTile extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(11),
             color: tileColor,
-            boxShadow: const [
+            boxShadow: [
               BoxShadow(
-                color: tileColor,
+                color: tileColor.withOpacity(0.3),
                 spreadRadius: 1,
                 blurRadius: 4,
               ),
@@ -46,8 +46,8 @@ class CoffeeTile extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               child: Text(
                 title,
-                style: TextStyle(
-                  color: Colors.grey[200],
+                style: const TextStyle(
+                  color: textColor,
                   fontSize: 18,
                   fontWeight: FontWeight.w500,
                 ),

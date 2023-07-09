@@ -1,11 +1,12 @@
 import 'dart:convert';
 
-import 'package:coffe_shop/domain/models/coffee.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:coffe_shop/domain/repository/coffe_repository.dart';
+import 'package:coffe_shop/domain/coffee/repository/coffe_repository.dart';
 
-class CoffeRepositroyImpl implements CoffeRepositroy {
+import '../../../domain/coffee/models/coffee.dart';
+
+class GetCoffeRepositroyImpl implements IGetCoffeRepositroy {
   final String serverIP = '192.168.0.101';
   final int serverPort = 3000;
   final client = http.Client();

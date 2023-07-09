@@ -1,7 +1,9 @@
-import 'package:coffe_shop/presentation/cubit/coffee_cubit.dart';
-import 'package:coffe_shop/presentation/screens/home_screen.dart';
+import 'package:coffe_shop/injection_container.dart';
+import 'package:coffe_shop/presentation/coffee/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'application/cubit/coffee_cubit.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => CoffeeCubit(),
+      create: (context) => sl<CoffeeCubit>(),
       child: const MaterialApp(
         home: HomeScreen(),
       ),

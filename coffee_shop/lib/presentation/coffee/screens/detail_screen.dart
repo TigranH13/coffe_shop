@@ -1,8 +1,8 @@
-import 'package:coffe_shop/configs/app_colors.dart';
+import 'package:coffe_shop/core/configs/app_colors.dart';
 
 import 'package:flutter/material.dart';
 
-import '../../domain/models/coffee.dart';
+import '../../../domain/coffee/models/coffee.dart';
 
 class DetailScreen extends StatelessWidget {
   final Coffee currentCoffee;
