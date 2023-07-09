@@ -1,5 +1,5 @@
 import 'dart:ui';
 
-const textColor = Color.fromARGB(255, 237, 224, 220);
-const backGroundColor = Color.fromARGB(255, 32, 26, 24);
-const tileColor = Color.fromARGB(255, 43, 33, 30);
+const textColor = Color(0xffEDE0DC);
+const backGroundColor = Color(0xff201A18);
+const tileColor = Color(0xff2b211e);
